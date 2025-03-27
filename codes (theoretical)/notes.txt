@@ -1,0 +1,18 @@
+*these are random coding notes i may need later
+
+SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1)
+
+provided function doMe(string what,float number,int count) : doMe("Hello",5f,1)
+
+	- without parameters
+	InvokeRepeating(string methodName, float time, float repeatRate);
+	Invoke(string methodName, float time);
+
+	- with parameters
+	InvokeRepeating(string methodName, float time, float repeatRate,object parameters);
+	Invoke(string methodName, float time, object parameter);
+
+	- example
+	InvokeRepeating("doMe", 3.4f, 2f,"Hello", 5f, 1);
+	Invoke("doMe", 3.4f, "Hello", 5f, 1);
+

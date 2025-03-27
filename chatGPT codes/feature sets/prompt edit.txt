@@ -1,0 +1,25 @@
+//reusable prompt data
+
+for extra context{
+	all the following prompts will be about coding in unity2018
+	i will be reffering to algorithm with algo, component with compo, random number with rando
+}
+
+for the upcoming prompts consider that{
+	blast.cs and soundmanager.cs are already in the project
+}
+
+
+// temporary prompt data
+
+for extra context{
+	for the next prompts the idea is to create a powerup that when the player (a gameobject with a tag player) is in range it heals the player. but it only lasts a certain amount of time
+}
+consider{
+	it only despawns when its lifespan is over
+	it will add health to the player every 0.2 seconds provided its in range
+	its health to add is set to healingamount * healing multiplier (adjustable)
+}
+make these changes{
+	
+}
