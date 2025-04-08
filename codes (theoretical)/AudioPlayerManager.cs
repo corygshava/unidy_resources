@@ -5,7 +5,6 @@ using UnityEngine.Audio;
 
 public class AudioPlayerManager : MonoBehaviour
 {
-    public commonData cmdt;
     public AudioSource aud;
 
     [Header("playlist")]
@@ -25,6 +24,12 @@ public class AudioPlayerManager : MonoBehaviour
     public bool toggleEnable = false;
     public bool shuffle = false;
     public bool working = true;
+
+    void Start(){
+        if(aud ==){
+
+        }
+    }
 
     // Update is called once per frame
     void Update(){
