@@ -1,4 +1,4 @@
-// last modified on 19/01/25 at 4:15PM - (last used in Codename racer)
+// last modified on 09/04/25 at 7:18PM - (last used in unidy_resources)
 
 using System.Collections;
 using System;
@@ -9,7 +9,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-// for using unity standard assets
+// for when using unity standard assets
 // using UnityStandardAssets.Vehicles.Car;
 
 public class cm : MonoBehaviour {
@@ -660,19 +660,27 @@ public class cm : MonoBehaviour {
 		Application.Quit ();
 	}
 
-	public void b_loadLvlDelay(int sceneNo,float seconds){
-		StartCoroutine (b_startScene(sceneNo,seconds));
+	public void b_loadLvlDelay_a(int sceneNo,float seconds){
+		StartCoroutine (b_startScene_a(sceneNo,seconds));
+	}
+	public void b_loadLvlDelay_b(int sceneNo,float seconds){
+		StartCoroutine (b_startScene_b(sceneNo,seconds));
 	}
 
 	public void KillMe(){
 		deact (gameObject, 1);
 	}
 
-	IEnumerator b_startScene (int SceneNo, float seconds){
+	IEnumerator b_startScene_a (int SceneNo, float seconds){
 		yield return new WaitForSeconds (seconds);
 		cm.loadLvla (SceneNo);
 	}
+
+	IEnumerator b_startScene_b (string SceneName, float seconds){
+		yield return new WaitForSeconds (seconds);
+		cm.loadLvlb (SceneName);
+	}
 }
 
-// some public enums
+// some public enums for easy codin
 public enum updatemode{Normal,FixedUpdate,LateUpdate};
