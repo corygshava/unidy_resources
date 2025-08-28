@@ -26,14 +26,4 @@ public class EventsTest : MonoBehaviour
 
     public event Action OnnewAction0;
     public event Action<int,bool> OnNewAction;
-
-    // Start is called before the first frame update
-    void Start(){
-        
-    }
-
-    // Update is called once per frame
-    void Update(){
-        
-    }
 }
